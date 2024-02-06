@@ -1,4 +1,10 @@
-
+## react ##
+*.html=lfs diff=lfs merge=lfs -text
+*.css=lfs diff=lfs merge=lfs -text
+*.js=lfs diff=lfs merge=lfs -text
+*.jsx=lfs diff=lfs merge=lfs -text
+*.ts=lfs diff=lfs merge=lfs -text
+*.tsx=lfs diff=lfs merge=lfs -text
 
 
 ## git-lfs ##
