@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from "react";
-import { BsList } from "react-icons/bs";
+//react icons
+import { BsList, BsListNested } from "react-icons/bs";
 
 interface Props {
   items: string[];
@@ -22,26 +23,53 @@ function useWindowSize() {
 //Navbar/hamburger button
 const Nav = ({ items }: Props) => {
   const [width, height] = useWindowSize(); //screen ratio
+  const [isHamShowing, setIsHamShowing] = useState(false); //shows if hamburger menu is showing
+
   //return navbar if screen ratio is wide, and a hamburger menu if it is thin
   return (
     <>
-      <nav className="flex justify-between m-5">
-        <h1 className="m-1 inline mx-3.5 font-bold text-xl">
-          Jonathan DiCecco
-        </h1>
-        {width / height >= 1.0 /** ratio is wide */ ? (
-          <ul>
+      <nav className="flex justify-between mx-5 mt-3">
+        <h1 className="small-text-bg">Jonathan DiCecco</h1>
+        {width / height >= 1.0 /** ratio is wide - Navbar*/ ? (
+          <ul className="">
             {items.map((item) => (
-              <li className="m-1 inline mx-3.5 font-bold text-xl hover:underline underline-offset-2">
-                {item}
-              </li>
+              <button>
+                <li className="small-text-bg ">{item}</li>
+              </button>
             ))}
           </ul>
         ) : (
-          /** ratio is thin */
-          <BsList className="bg-slate-400 rounded-full h-5 w-5 bg bg-opacity-0 hover:scale-125 hover:bg-opacity-20" />
+          /** ratio is thin - Hamburger Menu Button */
+          <>
+            <button onClick={() => setIsHamShowing(!isHamShowing)}>
+              {
+                /**toggles hamburger menu */
+                isHamShowing ? (
+                  <BsListNested className="hamburger-button" />
+                ) : (
+                  <BsList className="hamburger-button" />
+                )
+              }
+            </button>
+          </>
         )}
       </nav>
+      {
+        /**Shows Hamburger Menu when the toggle is on */
+        isHamShowing && (
+          <div className="hamburger-menu bg-slate-300 dark:bg-slate-600 absolute w-80 right-3 rounded-xl pb-3 transition-all">
+            <ul>
+              {items.map((item) => (
+                <li>
+                  <button className="font-bold text-2xl ml-5 mt-7 hover:underline">
+                    {item}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
     </>
   );
 };
