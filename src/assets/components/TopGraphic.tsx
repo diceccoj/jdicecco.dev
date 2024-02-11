@@ -1,4 +1,4 @@
-import RoundImage from "./RoundImage";
+import RoundImage from "./subcomponents/RoundImage";
 
 //props for social media button
 interface SMBProps {
@@ -11,7 +11,7 @@ interface SMBProps {
 const SocialMediaButton = ({ image, url, title }: SMBProps) => {
   return (
     <button
-      className="size-min slate-400 opacity-95 hover:opacity-100"
+      className="size-min slate-400"
       onClick={() => {
         window.location.href = url;
       }}
@@ -28,8 +28,8 @@ const SocialMediaButton = ({ image, url, title }: SMBProps) => {
 const TopGraphic = () => {
   return (
     <>
-      <div className="flex justify-center items-center mt-32">
-        <div className="responsive-grid items-center lg:w-2/3  place-items-center">
+      <div className="flex justify-center items-center mt-32 animate animate-phase-in">
+        <div className="responsive-grid lg:w-2/3  place-items-center">
           <div className=" md:justify-start justify-center">
             <RoundImage src="/portrait.png" size="medium" />
           </div>
@@ -43,7 +43,7 @@ const TopGraphic = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10 ">
+      <div className="flex justify-center mt-10 animate-phase-in">
         <div className="responsive-grid-3 place-items-center w-1/2">
           <SocialMediaButton
             title="Github Page"

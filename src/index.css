@@ -46,7 +46,7 @@ body {
     }
 
     .dynamic-opacity { /*Gets rid of opacity effect on mobile*/
-        @apply lg:opacity-90 lg:hover:opacity-100 opacity-100
+        @apply lg:opacity-90 lg:hover:opacity-100 opacity-100 hover:shadow-xl hover:scale-105 transition-all;
     }
 
 }
