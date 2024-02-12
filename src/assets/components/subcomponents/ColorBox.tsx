@@ -3,12 +3,12 @@
 interface Props {
   color: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   children: string;
   can_rotate?: boolean; //enables/disables rotating effect
   languages?: string[]; //the paths for the language images at public/languages_and_programs
-  margin?: string; //the margin class you want to put on the text box
   bonus_classes?: string;
+  text_box_classes?: string;
 }
 
 const ColorBox = ({
@@ -18,13 +18,13 @@ const ColorBox = ({
   children,
   can_rotate = true,
   languages = [],
-  margin = "",
   bonus_classes = "",
+  text_box_classes = "",
 }: Props) => {
-  //deciding background color
+  //deciding background color (yes its messy but i dont wanna change it)
   let base_classes =
     bonus_classes +
-    " group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5 min-w-72 lg:min-h-[94%] max-w-[90%]  ";
+    "  group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5 min-w-72   ";
   if (color == "grey") {
     base_classes = base_classes + "bg-gradient-to-t from-zinc-600 to-zinc-500 ";
   } else if (color == "indigo") {
@@ -42,32 +42,29 @@ const ColorBox = ({
 
   return (
     <div className={base_classes}>
-      <h1 className={`pt-2 text-xl text-center font-bold ` + margin}>
-        {title}
-      </h1>
+      <h1 className={`pt-2 text-xl text-center font-bold `}>{title}</h1>
       {subtitle != "" && ( //gives space for a subtitle only when necessary
         <h2 className="m-1 pt-1 text-sm font-bold text-center font-mono">
           {subtitle}
         </h2>
       )}
 
-      <p
-        className={
-          `px-3 py-2 text-sm font-mono italic ` +
-          (languages.length != 0 && `h-[60%]`) //adds fixed paragraph length if needs to make room for languages
-        }
-      >
+      <p className={`px-3 py-2 text-sm font-mono italic ` + text_box_classes}>
         {children}
       </p>
 
       {languages.length != 0 && ( //gives space for a language field only when necessary
         <>
-          <div className="flex h-24 justify-center flex-row scale-50 ">
+          <div className="flex h-24 justify-center flex-row scale-50">
             {languages.map((image) => (
-              <img src={`/languages_and_programs/` + image} />
+              <img
+                key={image}
+                src={`/languages_and_programs/` + image}
+                className="m-1"
+              />
             ))}
           </div>
-          <p className="flex text-xs justify-center text-center pb-1 ">
+          <p className="flex text-xs justify-center text-center pb-1">
             relevant languages and programs
           </p>
         </>

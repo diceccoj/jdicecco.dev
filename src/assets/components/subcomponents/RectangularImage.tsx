@@ -13,7 +13,7 @@ const RectangularImage = ({ src, size, bonus_classes }: Props) => {
   //determining base class size
   base_classes =
     size == "medium"
-      ? base_classes + " w-72"
+      ? base_classes + " w-80"
       : size == "small"
       ? base_classes + " w-36"
       : base_classes;

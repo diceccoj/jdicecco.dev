@@ -33,7 +33,7 @@ const Nav = ({ items }: Props) => {
         {width / height >= 1.0 /** ratio is wide - Navbar*/ ? (
           <ul className="">
             {items.map((item) => (
-              <button>
+              <button key={item}>
                 <li className="small-text-bg ">{item}</li>
               </button>
             ))}
@@ -60,7 +60,7 @@ const Nav = ({ items }: Props) => {
           <div className="hamburger-menu bg-slate-300 dark:bg-slate-600 absolute w-80 right-3 rounded-xl pb-3 transition-all">
             <ul>
               {items.map((item) => (
-                <li>
+                <li key={item}>
                   <button className="font-bold text-2xl ml-5 mt-7 hover:underline">
                     {item}
                   </button>

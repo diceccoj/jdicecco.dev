@@ -1,5 +1,41 @@
-import Job from "./subcomponents/Job";
 import Header from "./subcomponents/Header";
+import ColorBox from "./subcomponents/ColorBox";
+import RectangularImage from "./subcomponents/RectangularImage";
+
+interface Props {
+  //for colorbox
+  color: string;
+  title: string;
+  subtitle: string;
+  children: string;
+  languages?: string[]; //the paths for the language images at public/languages_and_programs
+
+  //for image
+  image: string; //from work folder
+}
+
+const Job = ({ color, title, subtitle, children, languages, image }: Props) => {
+  return (
+    <div>
+      <RectangularImage
+        src={`/work/` + image}
+        bonus_classes="rotate-[-6deg] absolute lg:translate-y-[-30px] translate-y-[-30px]"
+        size="small"
+      />
+      <ColorBox
+        color={color}
+        title={title}
+        subtitle={subtitle}
+        can_rotate={true}
+        languages={languages}
+        bonus_classes="lg:h-[515px] mt-20 max-w-[90%]"
+        text_box_classes="h-[60%]"
+      >
+        {children}
+      </ColorBox>
+    </div>
+  );
+};
 
 const JobsPanel = () => {
   return (
@@ -11,7 +47,6 @@ const JobsPanel = () => {
             title="Game Programmmer"
             subtitle="George Brown College"
             color="purple"
-            can_rotate={true}
             languages={["unity.png", "Csharp.png"]}
             image="george_brown.png"
           >
@@ -28,7 +63,6 @@ const JobsPanel = () => {
             title="Jr. Data Analyst"
             subtitle="Clearbox Retail"
             color="pink"
-            can_rotate={true}
             languages={["python.png", "power_automate.png", "excel.png"]}
             image="clearbox.png"
           >
@@ -44,7 +78,6 @@ const JobsPanel = () => {
             title="Finance Clerk"
             subtitle="Echelon Insurance"
             color="grey"
-            can_rotate={true}
             languages={["excel.png"]}
             image="echelon.jpg"
           >
