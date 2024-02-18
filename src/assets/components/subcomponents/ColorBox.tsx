@@ -4,7 +4,7 @@ interface Props {
   color: string;
   title: string;
   subtitle?: string;
-  children: string;
+  children?: string;
   can_rotate?: boolean; //enables/disables rotating effect
   languages?: string[]; //the paths for the language images at public/languages_and_programs
   bonus_classes?: string;
@@ -24,7 +24,7 @@ const ColorBox = ({
   //deciding background color (yes its messy but i dont wanna change it)
   let base_classes =
     bonus_classes +
-    "  group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5 min-w-72   ";
+    " group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5    ";
   if (color == "grey") {
     base_classes = base_classes + "bg-gradient-to-t from-zinc-600 to-zinc-500 ";
   } else if (color == "indigo") {

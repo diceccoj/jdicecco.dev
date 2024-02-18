@@ -30,7 +30,7 @@ const Nav = ({ items }: Props) => {
     <>
       <nav className="flex justify-between mx-5 mt-3">
         <h1 className="small-text-bg">Jonathan DiCecco</h1>
-        {width / height >= 1.0 /** ratio is wide - Navbar*/ ? (
+        {width / height >= 1.5 /** ratio is wide - Navbar*/ ? (
           <ul className="">
             {items.map((item) => (
               <button key={item}>

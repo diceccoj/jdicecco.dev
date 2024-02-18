@@ -17,7 +17,7 @@ const WebPanel = () => {
             button_text="View Source Code"
           >
             My new website! Built as a multipage React app with Tailwind CSS for
-            styling!
+            styling! The design and background was made entirely from scratch!
           </Project>
 
           <Project
