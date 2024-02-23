@@ -1,6 +1,7 @@
 import Header from "./subcomponents/Header";
 import ColorBox from "./subcomponents/ColorBox";
 import RectangularImage from "./subcomponents/RectangularImage";
+import RevealOnScroll from "./subcomponents/RevealOnScroll";
 
 interface Props {
   //for colorbox
@@ -39,9 +40,9 @@ const Job = ({ color, title, subtitle, children, languages, image }: Props) => {
 
 const JobsPanel = () => {
   return (
-    <>
-      <Header>My Job Experiences (Most Recent)</Header>
-      <div className="flex justify-center  mt-10 animate animate-phase-in">
+    <RevealOnScroll>
+      <Header id="Work">My Job Experiences (Most Recent)</Header>
+      <div className="flex justify-center  mt-10">
         <div className="responsive-grid-3 lg:w-3/4 bg-in  place-items-center">
           <Job
             title="Game Programmmer"
@@ -91,7 +92,7 @@ const JobsPanel = () => {
           </Job>
         </div>
       </div>
-    </>
+    </RevealOnScroll>
   );
 };
 

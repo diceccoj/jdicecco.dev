@@ -16,7 +16,7 @@ const ColorBox = ({
   title,
   subtitle,
   children,
-  can_rotate = true,
+  can_rotate = false,
   languages = [],
   bonus_classes = "",
   text_box_classes = "",
@@ -24,7 +24,7 @@ const ColorBox = ({
   //deciding background color (yes its messy but i dont wanna change it)
   let base_classes =
     bonus_classes +
-    " group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5    ";
+    " group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5 ";
   if (color == "grey") {
     base_classes = base_classes + "bg-gradient-to-t from-zinc-600 to-zinc-500 ";
   } else if (color == "indigo") {

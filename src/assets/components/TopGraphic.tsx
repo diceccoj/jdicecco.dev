@@ -1,4 +1,5 @@
 import RoundImage from "./subcomponents/RoundImage";
+import RevealOnScroll from "./subcomponents/RevealOnScroll";
 
 //props for social media button
 interface SMBProps {
@@ -27,8 +28,8 @@ const SocialMediaButton = ({ image, url, title }: SMBProps) => {
 //the top graphic of the website
 const TopGraphic = () => {
   return (
-    <>
-      <div className="flex justify-center items-center mt-32 animate animate-phase-in">
+    <RevealOnScroll>
+      <div className="flex justify-center items-center mt-32">
         <div className="responsive-grid lg:w-2/3  place-items-center">
           <div className=" md:justify-start justify-center">
             <RoundImage src="/portrait.png" size="medium" />
@@ -43,7 +44,7 @@ const TopGraphic = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10 animate-phase-in">
+      <div className="flex justify-center mt-10 ">
         <div className="responsive-grid-3 place-items-center w-1/2">
           <SocialMediaButton
             title="Github Page"
@@ -62,7 +63,7 @@ const TopGraphic = () => {
           />
         </div>
       </div>
-    </>
+    </RevealOnScroll>
   );
 };
 

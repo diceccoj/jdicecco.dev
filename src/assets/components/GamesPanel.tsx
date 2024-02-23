@@ -1,12 +1,13 @@
 import Header from "./subcomponents/Header";
 import Project from "./subcomponents/Project";
+import RevealOnScroll from "./subcomponents/RevealOnScroll";
 
 const GamesPanel = () => {
   return (
-    <>
-      <Header>My Games</Header>
+    <RevealOnScroll>
+      <Header id="Games">My Games</Header>
 
-      <div className=" flex justify-center  mt-10 animate animate-phase-in">
+      <div className=" flex justify-center  mt-10">
         <div className="responsive-grid-3 lg:w-3/4 w-1/2 bg-in place-items-center">
           <Project
             color="indigo"
@@ -44,7 +45,7 @@ const GamesPanel = () => {
           </Project>
         </div>
       </div>
-    </>
+    </RevealOnScroll>
   );
 };
 

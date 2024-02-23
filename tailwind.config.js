@@ -22,7 +22,6 @@ export default {
       },
       animation: {
         'phase-in': 'phase-in 0.75s ease-in',
-        'title-animation': 'title-animation 1.5s ease-in',
       }
 
     },
