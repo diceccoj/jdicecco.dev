@@ -57,12 +57,15 @@ const Project = ({
 
       <div className="flex justify-center">
         <button
-          className="my-1 text-center w-90% small-text-bg"
+          className={
+            "my-1 text-center w-90% small-text-bg " +
+            (url == "" && "opacity-50")
+          }
           onClick={() => {
             window.location.href = url;
           }}
         >
-          {button_text}
+          {url != "" ? button_text : "Coming Soon"}
         </button>
       </div>
     </div>

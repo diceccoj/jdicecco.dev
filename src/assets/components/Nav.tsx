@@ -44,7 +44,7 @@ const Nav = ({ items }: Props) => {
         <button
           className="small-text-bg"
           onClick={() => {
-            window.location.href = "";
+            window.location.href = "/";
           }}
         >
           Jonathan DiCecco

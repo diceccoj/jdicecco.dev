@@ -1,9 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, createRef, useState } from "react";
+
+interface Props {
+  children?: ReactNode | null;
+}
 
 //allows for any element to gradually appear on screen
-const RevealOnScroll = ({ children }) => {
+const RevealOnScroll = ({ children }: Props) => {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+  const ref = createRef<HTMLDivElement>();
 
   useEffect(() => {
     const scrollObserver = new IntersectionObserver(([entry]) => {
@@ -13,7 +17,7 @@ const RevealOnScroll = ({ children }) => {
       }
     });
 
-    scrollObserver.observe(ref.current);
+    ref.current != null && scrollObserver.observe(ref.current);
 
     return () => {
       if (ref.current) {

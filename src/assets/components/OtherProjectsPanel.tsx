@@ -95,7 +95,7 @@ const OtherProjectsPanel = () => {
             color="indigo"
             title="CPU Info Checker"
             languages={["bash.png"]}
-            image="bill.png"
+            image="cpu.png"
             url=""
           >
             A bash script that takes user input of what they want of the cpu,
