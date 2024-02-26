@@ -13,7 +13,7 @@ const GamesPanel = () => {
             title="Tier It"
             image="/games/tier_it.png"
             languages={["godot.svg", "firebase.png"]}
-            url="/tier_it/"
+            url="/src/pages/tier_it/"
           >
             An online game to play with your friends where you choose a topic,
             and rank eachother on who fits the best! Made in the Godot engine

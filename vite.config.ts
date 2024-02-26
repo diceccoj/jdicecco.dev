@@ -8,8 +8,7 @@ const pages = resolve(__dirname, "src", "pages");
 export default defineConfig({
   plugins: [react()],
   
-  resolve: {
-  },
+  
 
   build : {
     outDir,

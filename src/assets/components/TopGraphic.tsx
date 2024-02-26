@@ -1,30 +1,6 @@
-import RoundImage from "./subcomponents/RoundImage";
+import SocialMediaButton from "./subcomponents/SocialMediaButton";
 import RevealOnScroll from "./subcomponents/RevealOnScroll";
-
-//props for social media button
-interface SMBProps {
-  image: string; //the image file path in folder public/social_media
-  url: string;
-  title: string;
-}
-
-//displays a small round image and provides a link to the social media button
-const SocialMediaButton = ({ image, url, title }: SMBProps) => {
-  return (
-    <button
-      className="size-min slate-400"
-      onClick={() => {
-        window.location.href = url;
-      }}
-    >
-      <RoundImage size="small" src={`/social_media/${image}`} />
-      <div className="flex justify-center translate-y-[-30%]">
-        <p className="small-text-bg text-sm text-center w-2/3 ">{title}</p>
-      </div>
-    </button>
-  );
-};
-
+import RoundImage from "./subcomponents/RoundImage";
 //the top graphic of the website
 const TopGraphic = () => {
   return (
@@ -37,9 +13,10 @@ const TopGraphic = () => {
           <p className="m-5 small-text-bg w-fit p-5 ">
             Hi! My name is Jonathan DiCecco. I am a second year Computer Science
             Student at McMaster University. My favourite thing about CS is the
-            ability to make something new. Some neat idea for a game or program
-            caught your eye? Just make it! My favourite aspects of coding
-            specifically are gaming and frontend development.
+            ability to make something new. I like being able to come up with an
+            interesting idea for a game, website or program. If no one else made
+            it, then why not try to make it yourself? Below you'll find some
+            examples of that.
           </p>
         </div>
       </div>
