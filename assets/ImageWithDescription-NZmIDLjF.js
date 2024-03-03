@@ -1,1 +1,0 @@
-import{j as s}from"./index-Um9W_8TW.js";import{R as t}from"./SkillsPanel-ntXJuIsa.js";const o=({src:e,image_size:a="large",bonus_classes:m="",children:r=""})=>s.jsxs(s.Fragment,{children:[s.jsx(t,{src:e,size:a,bonus_classes:m+" lg:w-[100%] w-[70%]"}),s.jsx("p",{className:"small-text-bg lg:w-[90%] w-[65%] m-4 lg:mb-4 mb-20",children:r})]});export{o as I};
