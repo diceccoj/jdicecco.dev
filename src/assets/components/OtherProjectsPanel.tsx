@@ -66,7 +66,7 @@ const OtherProjectsPanel = () => {
             title="Autoclave Arm"
             languages={["python.png"]}
             image="autoclave.png"
-            url=""
+            url="/src/pages/autoclave_arm/"
           >
             A python script run in a Raspberry Pi, controlling a simulated
             autoclave arm, controlled using two muscle sensors.
@@ -76,7 +76,7 @@ const OtherProjectsPanel = () => {
             title="Sudoku Solver"
             languages={["python.png"]}
             image="sudoku.png"
-            url=""
+            url="/src/pages/sudoku_solver/"
           >
             A small project in Python which when given a sudoku board, will
             solve it for you!
@@ -86,7 +86,7 @@ const OtherProjectsPanel = () => {
             title="Billing System"
             languages={["C.png"]}
             image="bill.png"
-            url=""
+            url="/src/pages/billing_system/"
           >
             A billing system for "Jonathan's Cafe" written in C. Takes an amount
             of items and charges accordingly.
@@ -94,9 +94,9 @@ const OtherProjectsPanel = () => {
           <OtherProject
             color="indigo"
             title="CPU Info Checker"
-            languages={["bash.png"]}
+            languages={["bash.png", "C.png"]}
             image="cpu.png"
-            url=""
+            url="/src/pages/cpu_fetcher/"
           >
             A bash script that takes user input of what they want of the cpu,
             and returns the corresponding information.

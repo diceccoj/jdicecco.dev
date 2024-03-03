@@ -18,9 +18,11 @@ const ImageWithDescription = ({
       <RectangularImage
         src={src}
         size={image_size}
-        bonus_classes={bonus_classes}
+        bonus_classes={bonus_classes + " lg:w-[100%] w-[70%]"}
       />
-      <p className="small-text-bg w-[90%] m-4 lg:mb-4 mb-20">{children}</p>
+      <p className="small-text-bg lg:w-[90%] w-[65%] m-4 lg:mb-4 mb-20">
+        {children}
+      </p>
     </>
   );
 };

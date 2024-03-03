@@ -96,7 +96,7 @@ function App() {
       </RevealOnScroll>
       <RevealOnScroll>
         <Header id="Gallery">Gallery</Header>
-        <div className="flex justify-center items-center mt-32">
+        <div className="flex justify-center items-center mt-20">
           <div className="responsive-grid lg:w-2/3  place-items-center">
             <ImageWithDescription
               src="/pages/tier_it/1.png"
@@ -169,7 +169,7 @@ function App() {
       </RevealOnScroll>
       <RevealOnScroll>
         <Header id="Links">Links</Header>
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center mt-20">
           <div className="responsive-grid lg:w-2/3  place-items-center">
             <SocialMediaButton
               title="Source Code"

@@ -62,13 +62,13 @@ const EventsPanel = () => {
             <Event
               color="indigo"
               title="Cells at War Vs. Diabetes"
-              url=""
+              url="/src/pages/diabetes_game/"
               image="/events/cells_at_war.png"
             />
             <Event
               color="pink"
-              title="GDSC Solutions Hackathon"
-              url=""
+              title="GDSC Solutions Hackathon (Finalist)"
+              url="/src/pages/mindmender_ai/"
               image="/events/gdsc.png"
             />
           </div>
