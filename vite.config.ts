@@ -6,10 +6,8 @@ const outDir = resolve(__dirname, 'dist');
 const pages = resolve(__dirname, "src", "pages");
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/jdicecco.dev",
   plugins: [react()],
-  
-  
-
   build : {
     outDir,
     emptyOutDir: true,
