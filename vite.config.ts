@@ -6,7 +6,7 @@ const outDir = resolve(__dirname, 'dist');
 const pages = resolve(__dirname, "src", "pages");
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/jdicecco.dev",
+  base: "",
   plugins: [react()],
   build : {
     outDir,
@@ -23,7 +23,7 @@ export default defineConfig({
         mindmender_ai: resolve(pages, "mindmender_ai", "index.html"),
         first_website: resolve(pages, "first_website", "index.html"),
         diabetes_game: resolve(pages, "diabetes_game", "index.html"),
-        sudoku_solver: resolve(pages, "sudoku_solver", "index.html"),
+        pbi: resolve(pages, "pbi", "index.html"),
       },
     },
   },

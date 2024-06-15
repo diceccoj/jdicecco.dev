@@ -43,6 +43,7 @@ function App() {
           "git lfs",
           "Javascript",
           "Typescript",
+          "Cherwell Ticketing System",
           "Microsoft Office",
           "Linux",
           "Ubuntu Server",

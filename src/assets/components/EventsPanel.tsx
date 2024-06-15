@@ -42,36 +42,35 @@ const EventsPanel = () => {
   return (
     <RevealOnScroll>
       <Header id="Events">Events</Header>
+      <div className="flex justify-center items-center mt-10">
+        <p className="m-5 small-text-bg p-2 w-[50%]">
+          These are events in which I participated involving making some sort of
+          product, whether it be making a game, coding, or frontend development.
+          These events have taken place in jobs, hackathons, online classes
+          (i.e. Udemy) or just general challenges I pursued to brighten my
+          skills.
+        </p>
+      </div>
       <div className="justify-center items-center flex mt-10  animate-phase-in">
-        <div className="responsive-grid place-items-center w-3/4 p-2">
-          <div className="small-text-bg p-2 lg:w-[80%] w-3/4 ">
-            <p>
-              These are events in which I participated involving making some
-              sort of product, whether it be making a game, coding, or frontend
-              development. These events have taken place in jobs, hackathons, or
-              just general challenges. The first of which being my experience at
-              George Brown's "Cells at War" project, in which I helped make a
-              game teaching children about diabetes. The second is my group
-              project for the GDSC Solutions Hackathon, where students were
-              challenged to make a piece of software about a selected global
-              issue, in which my group chose mental health. You can learn more
-              about these projects on the side.
-            </p>
-          </div>
-          <div>
-            <Event
-              color="indigo"
-              title="Cells at War Vs. Diabetes"
-              url="/src/pages/diabetes_game/"
-              image="/events/cells_at_war.png"
-            />
-            <Event
-              color="pink"
-              title="GDSC Solutions Hackathon (Finalist)"
-              url="/src/pages/mindmender_ai/"
-              image="/events/gdsc.png"
-            />
-          </div>
+        <div className="responsive-grid-3 place-items-center w-3/4 p-2">
+          <Event
+            color="indigo"
+            title="Cells at War Vs. Diabetes"
+            url="/src/pages/diabetes_game/"
+            image="/events/cells_at_war.png"
+          />
+          <Event
+            color="pink"
+            title="GDSC Solutions Hackathon (Finalist)"
+            url="/src/pages/mindmender_ai/"
+            image="/events/gdsc.png"
+          />
+          <Event
+            color="grey"
+            title="Power BI Udemy Course"
+            url="/src/pages/pbi/"
+            image="/events/power-bi.png"
+          />
         </div>
       </div>
     </RevealOnScroll>
