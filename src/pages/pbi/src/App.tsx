@@ -158,6 +158,13 @@ function App() {
               An AI visual that breaks down the total transactions by the
               selected categories using a "Decomposition Tree".
             </ImageWithDescription>
+            <ImageWithDescription
+              src="/pages/pbi/9.jpg"
+              image_size="large"
+              bonus_classes="rotate-[3deg]"
+            >
+              My certificate for completeing the course!
+            </ImageWithDescription>
           </div>
         </div>
       </RevealOnScroll>
