@@ -7,7 +7,7 @@ const GamesPanel = () => {
     <RevealOnScroll>
       <Header id="Games">My Games</Header>
       <div className=" flex justify-center  mt-10">
-        <div className="responsive-grid-3 lg:w-3/4 w-1/2 bg-in place-items-center">
+        <div className="responsive-grid-3 lg:w-3/4 w-[90%] bg-in place-items-center">
           <Project
             color="indigo"
             title="Tier It"

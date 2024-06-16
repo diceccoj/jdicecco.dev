@@ -43,7 +43,7 @@ const EventsPanel = () => {
     <RevealOnScroll>
       <Header id="Events">Events</Header>
       <div className="flex justify-center items-center mt-10">
-        <p className="m-5 small-text-bg p-2 w-[50%]">
+        <p className="m-5 small-text-bg p-2 lg:w-[50%] w-[80%]">
           These are events in which I participated involving making some sort of
           product, whether it be making a game, coding, or frontend development.
           These events have taken place in jobs, hackathons, online classes
