@@ -1,17 +1,16 @@
-import "../../../App.css";
-import Footer from "../../../assets/components/Footer";
-import Nav from "../../../assets/components/Nav";
-import ThemeSwitcher from "../../../assets/components/ThemeSwitcher";
-import ColorBox from "../../../assets/components/subcomponents/ColorBox";
-import RevealOnScroll from "../../../assets/components/subcomponents/RevealOnScroll";
-import RoundImage from "../../../assets/components/subcomponents/RoundImage";
-import RectangularImage from "../../../assets/components/subcomponents/RectangularImage";
-import Header from "../../../assets/components/subcomponents/Header";
-import Video from "../../../assets/components/subcomponents/Video";
-import SkillsPanel from "../../../assets/components/SkillsPanel";
-import SocialMediaButton from "../../../assets/components/subcomponents/SocialMediaButton";
+import Footer from "../assets/components/Footer";
+import Nav from "../assets/components/Nav";
+import ThemeSwitcher from "../assets/components/ThemeSwitcher";
+import ColorBox from "../assets/components/subcomponents/ColorBox";
+import RevealOnScroll from "../assets/components/subcomponents/RevealOnScroll";
+import RoundImage from "../assets/components/subcomponents/RoundImage";
+import RectangularImage from "../assets/components/subcomponents/RectangularImage";
+import Header from "../assets/components/subcomponents/Header";
+import Video from "../assets/components/subcomponents/Video";
+import SkillsPanel from "../assets/components/SkillsPanel";
+import SocialMediaButton from "../assets/components/subcomponents/SocialMediaButton";
 
-function App() {
+function Tetris() {
   return (
     <>
       <Nav items={["About", "Demo", "Skills", "Links"]} />
@@ -110,4 +109,4 @@ function App() {
   );
 }
 
-export default App;
+export default Tetris;

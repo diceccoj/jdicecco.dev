@@ -1,4 +1,3 @@
-import "../../../App.css";
 import Footer from "../../../assets/components/Footer";
 import Nav from "../../../assets/components/Nav";
 import ThemeSwitcher from "../../../assets/components/ThemeSwitcher";
@@ -10,7 +9,7 @@ import Header from "../../../assets/components/subcomponents/Header";
 import ImageWithDescription from "../../../assets/components/subcomponents/ImageWithDescription";
 import SkillsPanel from "../../../assets/components/SkillsPanel";
 
-function App() {
+function MindmenderAI() {
   return (
     <>
       <Nav items={["About", "Gallery", "Skills", "Links"]} />
@@ -178,4 +177,4 @@ function App() {
   );
 }
 
-export default App;
+export default MindmenderAI;

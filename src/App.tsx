@@ -1,82 +1,35 @@
-import "./App.css";
-import Nav from "./assets/components/Nav";
-import ThemeSwitcher from "./assets/components/ThemeSwitcher";
-import TopGraphic from "./assets/components/TopGraphic";
-import JobsPanel from "./assets/components/JobsPanel";
-import GamesPanel from "./assets/components/GamesPanel";
-import WebPanel from "./assets/components/WebPanel";
-import EventsPanel from "./assets/components/EventsPanel";
-import SkillsPanel from "./assets/components/SkillsPanel";
-import OtherProjectsPanel from "./assets/components/OtherProjectsPanel";
-import Footer from "./assets/components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Autoclave from "./pages/Autoclave";
+import BillingSystem from "./pages/BillingSystem";
+import CPUFetcher from "./pages/CPUFetcher";
+import DiabetesGame from "./pages/DiabetesGame";
+import FirstWebsite from "./pages/FirstWebsite";
+import Initial from "./pages/Initial";
+import TierIt from "./pages/TierIt";
+import Tetris from "./pages/Tetris";
+import SudokuSolver from "./pages/SudokuSolver";
+import PowerBI from "./pages/PowerBI";
+import MindmenderAI from "./pages/mindmender_ai/src/App";
 
 function App() {
   return (
-    <>
-      <Nav
-        items={[
-          "Work",
-          "Games",
-          "Websites",
-          "Events",
-          "Other Projects",
-          "Skills",
-        ]}
-      ></Nav>
-      <TopGraphic />
-      <JobsPanel />
-      <GamesPanel />
-      <WebPanel />
-      <EventsPanel />
-      <OtherProjectsPanel />
-      <SkillsPanel
-        skills={[
-          "Python",
-          "C#",
-          "C++",
-          "C",
-          "Java",
-          "HTML",
-          "css",
-          "vite",
-          "git",
-          "git lfs",
-          "Javascript",
-          "Typescript",
-          "Cherwell Ticketing System",
-          "Microsoft Office",
-          "Linux",
-          "Ubuntu Server",
-          "RHEL Linux",
-          "Power Automate",
-          "Excel",
-          "Haskell",
-          "React",
-          "Tailwind",
-          "OpenWeather API",
-          "Open AI API",
-          "Unsplash API",
-          "Google Firebase",
-          "Firestore",
-          "REST API",
-          "Godot",
-          "Unity",
-          "Finance",
-          "Server management",
-          "JSON Files",
-          "Streamlit",
-          "Windows 10/11",
-          "Time Management",
-          "Worked In Teams",
-          "led groups",
-          "communication",
-          "hard working",
-        ]}
-      />
-      <Footer />
-
-      <ThemeSwitcher />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/src/pages/autoclave_arm/" element={<Autoclave />} />
+        <Route path="/src/pages/billing_system/" element={<BillingSystem />} />
+        <Route path="/src/pages/cpu_fetcher/" element={<CPUFetcher />} />
+        <Route path="/src/pages/diabetes_game/" element={<DiabetesGame />} />
+        <Route path="/src/pages/first_website/" element={<FirstWebsite />} />
+        <Route path="/src/pages/initial/" element={<Initial />} />
+        <Route path="/src/pages/tier_it/" element={<TierIt />} />
+        <Route path="/src/pages/tetris/" element={<Tetris />} />
+        <Route path="/src/pages/sudoku_solver/" element={<SudokuSolver />} />
+        <Route path="/src/pages/pbi/" element={<PowerBI />} />
+        <Route path="/src/pages/mindmender_ai/" element={<MindmenderAI />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
