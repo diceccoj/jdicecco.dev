@@ -8,8 +8,12 @@ import Header from "../assets/components/subcomponents/Header";
 import ImageWithDescription from "../assets/components/subcomponents/ImageWithDescription";
 import SkillsPanel from "../assets/components/SkillsPanel";
 import SocialMediaButton from "../assets/components/subcomponents/SocialMediaButton";
+import { useEffect } from "react";
 
 function Initial() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav items={["About", "Gallery", "Demo", "Skills", "Links"]} />

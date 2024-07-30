@@ -10,7 +10,12 @@ import SkillsPanel from "./assets/components/SkillsPanel";
 import OtherProjectsPanel from "./assets/components/OtherProjectsPanel";
 import Footer from "./assets/components/Footer";
 
+import { useEffect } from "react";
+
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav

@@ -8,8 +8,12 @@ import RectangularImage from "../assets/components/subcomponents/RectangularImag
 import Header from "../assets/components/subcomponents/Header";
 import ImageWithDescription from "../assets/components/subcomponents/ImageWithDescription";
 import SkillsPanel from "../assets/components/SkillsPanel";
+import { useEffect } from "react";
 
 function MindmenderAI() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav items={["About", "Gallery", "Skills", "Links"]} />

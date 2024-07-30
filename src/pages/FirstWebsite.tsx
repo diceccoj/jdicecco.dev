@@ -8,8 +8,12 @@ import RectangularImage from "../assets/components/subcomponents/RectangularImag
 import Header from "../assets/components/subcomponents/Header";
 import SkillsPanel from "../assets/components/SkillsPanel";
 import SocialMediaButton from "../assets/components/subcomponents/SocialMediaButton";
+import { useEffect } from "react";
 
 function FirstWebsite() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Nav items={["About", "Skills", "Links"]} />

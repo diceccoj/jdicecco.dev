@@ -10,8 +10,13 @@ import ImageWithDescription from "../assets/components/subcomponents/ImageWithDe
 import Video from "../assets/components/subcomponents/Video";
 import SkillsPanel from "../assets/components/SkillsPanel";
 import SocialMediaButton from "../assets/components/subcomponents/SocialMediaButton";
+import { useEffect } from "react";
 
 function TierIt() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Nav items={["About", "Gallery", "Demo", "Skills", "Links"]} />
