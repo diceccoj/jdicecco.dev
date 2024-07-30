@@ -25,7 +25,7 @@ const WebPanel = () => {
             title="Initial Startpage"
             image="/webs/initial.png"
             languages={["HTML.png", "CSS.png", "Javascript.png"]}
-            url="/src/pages/initial/"
+            url="/#/initial/"
           >
             A custom project of mine where I made a small startpage for my
             browser. Made custom styling and features with CSS and Javascript,
@@ -37,7 +37,7 @@ const WebPanel = () => {
             title="My First Portfolio"
             image="/webs/old_website.png"
             languages={["HTML.png", "CSS.png", "Javascript.png"]}
-            url="/src/pages/first_website/"
+            url="/#/first_website/"
           >
             My very first website project. Built with HTML, CSS and Javascript.
             Implemented sliders, gradient backgrounds, and learned the basics

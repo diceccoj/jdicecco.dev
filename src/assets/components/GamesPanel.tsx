@@ -13,7 +13,7 @@ const GamesPanel = () => {
             title="Tier It"
             image="/games/tier_it.png"
             languages={["godot.svg", "firebase.png"]}
-            url="/src/pages/tier_it/"
+            url="/#/tier_it/"
           >
             An online game to play with your friends where you choose a topic,
             and rank eachother on who fits the best! Made in the Godot engine
@@ -25,7 +25,7 @@ const GamesPanel = () => {
             title="Cells At War vs Diabetes"
             image="games/george_brown.png"
             languages={["unity.png", "Csharp.png"]}
-            url="/src/pages/diabetes_game/"
+            url="/#/diabetes_game/"
           >
             A game made in Unity meant to help educate children about diabetes.
             My main role was creating menus and implementing new features such
@@ -37,7 +37,7 @@ const GamesPanel = () => {
             title="Tetris"
             image="/games/tetris.png"
             languages={["unity.png", "Csharp.png"]}
-            url="/src/pages/tetris/"
+            url="/#/tetris/"
           >
             My first unity project! A clone of the original Tetris Project with
             block ghosting, and a score counter for how many lines you cleared.
