@@ -17,17 +17,17 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/#/autoclave_arm/" element={<Autoclave />} />
-        <Route path="/#/billing_system/" element={<BillingSystem />} />
-        <Route path="/#/cpu_fetcher/" element={<CPUFetcher />} />
-        <Route path="/#/diabetes_game/" element={<DiabetesGame />} />
-        <Route path="/#/first_website/" element={<FirstWebsite />} />
-        <Route path="/#/initial/" element={<Initial />} />
-        <Route path="/#/tier_it/" element={<TierIt />} />
-        <Route path="/#/tetris/" element={<Tetris />} />
-        <Route path="/#/sudoku_solver/" element={<SudokuSolver />} />
-        <Route path="/#/pbi/" element={<PowerBI />} />
-        <Route path="/#/mindmender_ai/" element={<MindmenderAI />} />
+        <Route path="/autoclave_arm/" element={<Autoclave />} />
+        <Route path="/billing_system/" element={<BillingSystem />} />
+        <Route path="/cpu_fetcher/" element={<CPUFetcher />} />
+        <Route path="/diabetes_game/" element={<DiabetesGame />} />
+        <Route path="/first_website/" element={<FirstWebsite />} />
+        <Route path="/initial/" element={<Initial />} />
+        <Route path="/tier_it/" element={<TierIt />} />
+        <Route path="/tetris/" element={<Tetris />} />
+        <Route path="/sudoku_solver/" element={<SudokuSolver />} />
+        <Route path="/pbi/" element={<PowerBI />} />
+        <Route path="/mindmender_ai/" element={<MindmenderAI />} />
       </Routes>
     </HashRouter>
   );
