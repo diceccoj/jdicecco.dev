@@ -2,10 +2,11 @@ import { ReactNode, useEffect, createRef, useState } from "react";
 
 interface Props {
   children?: ReactNode | null;
+  className?: string;
 }
 
 //allows for any element to gradually appear on screen
-const RevealOnScroll = ({ children }: Props) => {
+const RevealOnScroll = ({ children, className }: Props) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = createRef<HTMLDivElement>();
 
@@ -30,7 +31,7 @@ const RevealOnScroll = ({ children }: Props) => {
         ${isVisible ? "animate animate-phase-in" : "opacity-0"}`;
 
   return (
-    <div ref={ref} className={classes}>
+    <div ref={ref} className={classes + " " + className}>
       {children}
     </div>
   );

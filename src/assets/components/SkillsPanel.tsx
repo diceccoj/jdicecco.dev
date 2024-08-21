@@ -1,6 +1,5 @@
 import Header from "./subcomponents/Header";
 import RevealOnScroll from "./subcomponents/RevealOnScroll";
-
 interface Props {
   skills: string[];
 }

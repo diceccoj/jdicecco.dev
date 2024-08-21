@@ -20,8 +20,8 @@ const Job = ({ color, title, subtitle, children, languages, image }: Props) => {
     <div>
       <RectangularImage
         src={`/work/` + image}
-        bonus_classes="rotate-[-6deg] absolute lg:translate-y-[-30px] translate-y-[-30px]"
-        size="small"
+        bonus_classes="rotate-[-6deg] absolute lg:translate-y-[-30px] translate-y-[-30px] w-32 "
+        size=""
       />
       <ColorBox
         color={color}
@@ -29,7 +29,7 @@ const Job = ({ color, title, subtitle, children, languages, image }: Props) => {
         subtitle={subtitle}
         can_rotate={true}
         languages={languages}
-        bonus_classes="lg:h-[515px] mt-20 max-w-[90%]"
+        bonus_classes="lg:h-[575px] mt-20 max-w-[90%]"
         text_box_classes="h-[60%]"
       >
         {children}
@@ -43,11 +43,26 @@ const JobsPanel = () => {
     <RevealOnScroll>
       <Header id="Work">My Job Experiences (Most Recent)</Header>
       <div className="flex justify-center  mt-10">
-        <div className="responsive-grid-3 lg:w-3/4 bg-in  place-items-center">
+        <div className="responsive-grid-4 lg:w-[95%] place-items-center">
+          <Job
+            title="IT Cherwell Admin - Summer Student"
+            subtitle="CAA Insurance"
+            color="indigo"
+            languages={["cherwell.png", "SQL.png", "power-bi.png", "excel.png"]}
+            image="CAA.png"
+          >
+            Used Cherwell Client to access various databases for the company,
+            including incident tickets and server databases. I was in charge of
+            a number of cleanup tasks in the server management database,
+            including talking to fellow employees to identify security
+            information of servers. In addition, I was responsible for testing
+            an employee onboarding form, resulting in me finding many bugs for
+            the team.
+          </Job>
           <Job
             title="Game Programmmer"
             subtitle="George Brown College"
-            color="purple"
+            color="blue"
             languages={["unity.png", "Csharp.png"]}
             image="george_brown.png"
           >

@@ -21,7 +21,7 @@ const WebPanel = () => {
           </Project>
 
           <Project
-            color="indigo"
+            color="blue"
             title="Initial Startpage"
             image="/webs/initial.png"
             languages={["HTML.png", "CSS.png", "Javascript.png"]}

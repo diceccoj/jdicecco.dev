@@ -72,7 +72,7 @@ const OtherProjectsPanel = () => {
             autoclave arm, controlled using two muscle sensors.
           </OtherProject>
           <OtherProject
-            color="purple"
+            color="teal"
             title="Sudoku Solver"
             languages={["python.png"]}
             image="sudoku.png"

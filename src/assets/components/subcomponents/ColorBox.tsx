@@ -33,6 +33,10 @@ const ColorBox = ({
   } else if (color == "purple") {
     base_classes =
       base_classes + "bg-gradient-to-t from-violet-600 to-violet-500";
+  } else if (color == "blue") {
+    base_classes = base_classes + "bg-gradient-to-t from-sky-500 to-sky-400";
+  } else if (color == "teal") {
+    base_classes = base_classes + "bg-gradient-to-t from-teal-600 to-teal-500";
   } else {
     base_classes = base_classes + "bg-gradient-to-t from-pink-600 to-pink-500"; //pink
   }

@@ -33,7 +33,7 @@ const GamesPanel = () => {
           </Project>
 
           <Project
-            color="purple"
+            color="teal"
             title="Tetris"
             image="/games/tetris.png"
             languages={["unity.png", "Csharp.png"]}
