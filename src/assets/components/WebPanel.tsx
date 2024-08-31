@@ -7,7 +7,7 @@ const WebPanel = () => {
     <RevealOnScroll>
       <Header id="Websites">My Websites</Header>
       <div className=" flex justify-center  mt-10">
-        <div className="responsive-grid-3 lg:w-3/4 w-[90%] bg-in place-items-center">
+        <div className="responsive-grid lg:w-[50%] w-[90%] bg-in place-items-center">
           <Project
             color="grey"
             title="This Website"
@@ -42,6 +42,22 @@ const WebPanel = () => {
             My very first website project. Built with HTML, CSS and Javascript.
             Implemented sliders, gradient backgrounds, and learned the basics
             and Javascript and CSS with this project.
+          </Project>
+          <Project
+            color="indigo"
+            title="Art Portfolio"
+            image="/webs/art_portfolio.png"
+            languages={[
+              "react.svg",
+              "typescript.png",
+              "SQL.png",
+              "django.png",
+              "aws.png",
+            ]}
+            url="/#/art_portfolio/"
+          >
+            A fullstack art portfolio website I built for my sister! Made with
+            react on the frontend and Django in the backend.
           </Project>
         </div>
       </div>

@@ -17,7 +17,7 @@ interface Props {
 
 const Job = ({ color, title, subtitle, children, languages, image }: Props) => {
   return (
-    <div>
+    <div className="lg:mt-0 mt-5">
       <RectangularImage
         src={`/work/` + image}
         bonus_classes="rotate-[-6deg] absolute lg:translate-y-[-30px] translate-y-[-30px] w-32 "

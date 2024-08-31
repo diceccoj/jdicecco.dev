@@ -30,8 +30,8 @@ function Home() {
       ></Nav>
       <TopGraphic />
       <JobsPanel />
-      <GamesPanel />
       <WebPanel />
+      <GamesPanel />
       <EventsPanel />
       <OtherProjectsPanel />
       <SkillsPanel

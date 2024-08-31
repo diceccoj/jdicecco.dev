@@ -26,7 +26,7 @@ function BillingSystem() {
                 bonus_classes="scale-[200%] hover:scale-[210%]"
               />
             </div>
-            <p className="m-5 small-text-bg w-fit p-5 ">
+            <p className="m-5 lg:mt-5 mt-20 small-text-bg w-fit p-5 ">
               This is a small billing system that I made using C. The program
               takes your order, finds the total cost, and displays the receipt
               for the user.
@@ -37,7 +37,7 @@ function BillingSystem() {
       <RevealOnScroll>
         <Header id="About">About</Header>
         <div className="flex justify-center items-center mt-10">
-          <div className="grid grid-cols-1 space-x-10 space-y-10 lg:w-2/3 place-items-center">
+          <div className="grid grid-cols-1 lg:space-x-10 space-y-10 lg:w-2/3 place-items-center">
             <ColorBox
               color="pink"
               title="What does it do?"

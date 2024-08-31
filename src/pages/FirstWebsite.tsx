@@ -27,7 +27,7 @@ function FirstWebsite() {
                 bonus_classes="scale-[200%] hover:scale-[210%]"
               />
             </div>
-            <p className="m-5 small-text-bg w-fit p-5 ">
+            <p className="m-5 lg:mt-5 mt-20 small-text-bg w-fit p-5 ">
               This was the first website I made, which I used vanilla HTML,
               Javascript and CSS. Though I have since moved to this website as
               my portfolio, I learned a lot of valuable skills which what led me
@@ -41,7 +41,7 @@ function FirstWebsite() {
       <RevealOnScroll>
         <Header id="About">About</Header>
         <div className="flex justify-center items-center mt-10">
-          <div className="responsive-grid space-x-10 space-y-10 lg:w-2/3 place-items-center">
+          <div className="responsive-grid lg:space-x-10 space-y-10 lg:w-2/3 place-items-center">
             <RectangularImage
               src="/webs/old_website.png"
               size="large"

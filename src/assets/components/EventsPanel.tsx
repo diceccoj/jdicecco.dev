@@ -52,7 +52,7 @@ const EventsPanel = () => {
         </p>
       </div>
       <div className="justify-center items-center flex mt-10  animate-phase-in">
-        <div className="responsive-grid-3 place-items-center w-3/4 p-2">
+        <div className="responsive-grid place-items-center w-3/4 p-2">
           <Event
             color="indigo"
             title="Cells at War Vs. Diabetes"
@@ -70,6 +70,12 @@ const EventsPanel = () => {
             title="Power BI Udemy Course"
             url="/#/pbi/"
             image="/events/power-bi.png"
+          />
+          <Event
+            color="teal"
+            title="Python ML Udemy Course"
+            url="/#/python_ml/"
+            image="/events/python_ml.png"
           />
         </div>
       </div>

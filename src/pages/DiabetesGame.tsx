@@ -41,7 +41,7 @@ function DiabetesGame() {
       <RevealOnScroll>
         <Header id="About">About</Header>
         <div className="flex justify-center items-center mt-10">
-          <div className="responsive-grid space-x-10 space-y-10 lg:w-2/3 place-items-center">
+          <div className="responsive-grid lg:space-x-10 space-y-10 lg:w-2/3 place-items-center">
             <RectangularImage
               src="/pages/diabetes_game/1.png"
               size="large"

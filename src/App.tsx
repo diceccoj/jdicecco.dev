@@ -11,6 +11,8 @@ import Tetris from "./pages/Tetris";
 import SudokuSolver from "./pages/SudokuSolver";
 import PowerBI from "./pages/PowerBI";
 import MindmenderAI from "./pages/MindMenderAI";
+import PythonML from "./pages/PythonML";
+import ArtPortfolio from "./pages/ArtPortfolio";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/sudoku_solver/" element={<SudokuSolver />} />
         <Route path="/pbi/" element={<PowerBI />} />
         <Route path="/mindmender_ai/" element={<MindmenderAI />} />
+        <Route path="/python_ml/" element={<PythonML />} />
+        <Route path="/art_portfolio/" element={<ArtPortfolio />} />
       </Routes>
     </HashRouter>
   );
