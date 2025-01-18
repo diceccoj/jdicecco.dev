@@ -79,6 +79,14 @@ const EventsPanel = () => {
           />
         </div>
       </div>
+      <div className="flex justify-center mt-5">
+        <Event
+              color="teal"
+              title="DeltaHacks XI - NδtHacked"
+              url="/#/deltahacksxi/"
+              image="/pages/deltahacksxi/deltahacksxi.png"
+            />
+      </div>
     </RevealOnScroll>
   );
 };

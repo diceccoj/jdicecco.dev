@@ -13,6 +13,7 @@ import PowerBI from "./pages/PowerBI";
 import MindmenderAI from "./pages/MindMenderAI";
 import PythonML from "./pages/PythonML";
 import ArtPortfolio from "./pages/ArtPortfolio";
+import DeltaHacksXI from "./pages/DeltaHacksXI";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/mindmender_ai/" element={<MindmenderAI />} />
         <Route path="/python_ml/" element={<PythonML />} />
         <Route path="/art_portfolio/" element={<ArtPortfolio />} />
+        <Route path="/deltahacksxi/" element={<DeltaHacksXI />} />
       </Routes>
     </HashRouter>
   );
