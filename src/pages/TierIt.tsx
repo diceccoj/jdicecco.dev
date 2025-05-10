@@ -66,15 +66,20 @@ function TierIt() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              Tier it was my first major project for video games where I wasn't
-              contracted. Every asset, other than a few royalty free ones such
-              as music and backgrounds was made by me. I loved programming in
+              {[
+                `Tier it was my first major project for video games where I wasn't
+              contracted.`,
+                `Every asset, other than a few royalty free ones such
+              as music and backgrounds was made by me.`,
+                `I loved programming in
               Godot as it opened my eyes to a new game engine and let me apply
               my knowledge from other platforms such as Unity and apply it to
-              something new. It wasn't easy, as Godot is still pretty niche and
+              something new.`,
+                `It wasn't easy, as Godot is still pretty niche and
               thus didn't have the best tools to work with Firebase, but I
               pushed through and made a beautiful end product that is both
-              reliable and fairly efficient.
+              reliable and fairly efficient.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="grey"
@@ -83,17 +88,21 @@ function TierIt() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              Like I mentioned before, Tier It uses Godot, which uses its own
+              {[
+                `Like I mentioned before, Tier It uses Godot, which uses its own
               scripting language (GDScript). It was great and consise but it did
-              not have the best tools to use Firebase with. However, I now know
-              that Godot allows users to use C# and GDScript in the same
+              not have the best tools to use Firebase with.`,
+                `However, I now
+              know that Godot allows users to use C# and GDScript in the same
               project. C# obviously has much better Firebase tools, so I don't
               think it would be too hard to implement better database management
-              code while leaving the rest of the game alone. I also want to add
-              other features to the game, such as allowing players to rank
+              code while leaving the rest of the game alone.`,
+                `I also want to
+              add other features to the game, such as allowing players to rank
               objects rather than people. For example, let's say you add a "best
               fruit" category, and have each player in your room to rank various
-              fruit.
+              fruit.`,
+              ]}
             </ColorBox>
           </div>
         </div>

@@ -7,7 +7,7 @@ const WebPanel = () => {
     <RevealOnScroll>
       <Header id="Websites">My Websites</Header>
       <div className=" flex justify-center  mt-10">
-        <div className="responsive-grid lg:w-[50%] w-[90%] bg-in place-items-center">
+        <div className="responsive-grid-4  w-[95%] bg-in place-items-center">
           <Project
             color="grey"
             title="This Website"

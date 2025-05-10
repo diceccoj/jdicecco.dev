@@ -67,14 +67,16 @@ function DiabetesGame() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              This was the first professional project I participated in and I am
-              proud of the result. The base of the game, at first, was hard to
+              {[
+                `This was the first professional project I participated in and I am
+              proud of the result.`,
+                `The base of the game, at first, was hard to
               maintain attention or give much sense of reward, which are
-              important factors to consider when making a game for children as
-              they usually want a game that is colorful, intriguing, and pops
-              out. By the end, the game's main issues, that being going for long
+              important factors to consider when making a game for children`,
+                `By the end, the game's main issues, that being going for long
               periods of time without any actions, now has a ton of activity and
-              info to learn about while still being approachable to children.
+              info to learn about while still being approachable to children.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="grey"

@@ -53,17 +53,17 @@ function PowerBI() {
               can_rotate={true}
               languages={["power-bi.png"]}
             >
-              As mentioned above, Power BI, like other programs such as Tableau,
+              {[
+                `As mentioned above, Power BI, like other programs such as Tableau,
               grabs your data tables from a variety of programs, will help you
               create additional columns and queries with Power Query (which I
-              also learned how to use in this course), build relationships
-              between the tables based on primary and foreign keys, helps build
-              more queries and measures thanks to its built-in DAX language, and
-              lastly, help you create a powerful and beautiful report to display
-              a multitude of information, what you see on the left (or above on
-              mobile) is the frontpage of the report built throughout the
-              course. It gives you the revenue trends, the top 10 best selling
-              products, and other basic information such as profit.
+              also learned how to use in this course)`,
+                `helps you build relationships
+              between tables based on keys along with creating queries, and help you create a powerful and beautiful report to display
+              `,
+                `The picture here is the frontpage of the report built throughout the
+              course.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="purple"
@@ -72,14 +72,18 @@ function PowerBI() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              I was very interested in data analytics going into this course,
-              and even more interested going out. Being able to use my skills
+              {[
+                `I was very interested in data analytics going into this course,
+              and even more interested going out.`,
+                `Being able to use my skills
               from my previous SQL knowledge and general design principles from
               learning how to build websites meant that the transition to DAX
-              and Power BI tools went very smoothly. In addition down below you
+              and Power BI tools went very smoothly.`,
+                `In addition down below you
               will see the many other tools I used to create (in my opinion) a
               fantastic report, such as a map visual with custom hovering
-              tooltips.
+              tooltips.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="grey"

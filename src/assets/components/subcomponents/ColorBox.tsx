@@ -4,7 +4,7 @@ interface Props {
   color: string;
   title: string;
   subtitle?: string;
-  children?: string;
+  children?: string[] | string;
   can_rotate?: boolean; //enables/disables rotating effect
   languages?: string[]; //the paths for the language images at public/languages_and_programs
   bonus_classes?: string;
@@ -15,7 +15,7 @@ const ColorBox = ({
   color,
   title,
   subtitle,
-  children,
+  children = "",
   can_rotate = false,
   languages = [],
   bonus_classes = "",
@@ -25,20 +25,30 @@ const ColorBox = ({
   let base_classes =
     bonus_classes +
     " group text-white bg-gradient-to-t rounded-xl justify-center transition-all outline outline-white outline-4 m-5 ";
-  if (color == "grey") {
-    base_classes = base_classes + "bg-gradient-to-t from-zinc-600 to-zinc-500 ";
-  } else if (color == "indigo") {
-    base_classes =
-      base_classes + "bg-gradient-to-t from-indigo-600 to-indigo-500";
-  } else if (color == "purple") {
-    base_classes =
-      base_classes + "bg-gradient-to-t from-violet-600 to-violet-500";
-  } else if (color == "blue") {
-    base_classes = base_classes + "bg-gradient-to-t from-sky-500 to-sky-400";
-  } else if (color == "teal") {
-    base_classes = base_classes + "bg-gradient-to-t from-teal-600 to-teal-500";
-  } else {
-    base_classes = base_classes + "bg-gradient-to-t from-pink-600 to-pink-500"; //pink
+
+  switch (color) {
+    case "grey":
+      base_classes =
+        base_classes + "bg-gradient-to-t from-zinc-600 to-zinc-500 ";
+      break;
+    case "indigo":
+      base_classes =
+        base_classes + "bg-gradient-to-t from-indigo-600 to-indigo-500";
+      break;
+    case "purple":
+      base_classes =
+        base_classes + "bg-gradient-to-t from-violet-600 to-violet-500";
+      break;
+    case "blue":
+      base_classes = base_classes + "bg-gradient-to-t from-sky-500 to-sky-400";
+      break;
+    case "teal":
+      base_classes =
+        base_classes + "bg-gradient-to-t from-teal-600 to-teal-500";
+      break;
+    default:
+      base_classes =
+        base_classes + "bg-gradient-to-t from-pink-600 to-pink-500"; //pink
   }
 
   //rotation effect
@@ -52,10 +62,22 @@ const ColorBox = ({
           {subtitle}
         </h2>
       )}
-
-      <p className={`px-3 py-2 text-sm font-mono italic ` + text_box_classes}>
-        {children}
-      </p>
+      {typeof children === "string" ? ( //is child is string, put it in a paragraph
+        <p className={`px-3 py-2 text-sm font-mono ` + text_box_classes}>
+          {children}
+        </p>
+      ) : (
+        //otherwise put it in a list
+        <ul
+          className={
+            `list-disc px-5 py-2 text-sm font-mono ` + text_box_classes
+          }
+        >
+          {children.map((e) => {
+            return <li className="py-1" key={e}>{e}</li>;
+          })}
+        </ul>
+      )}
 
       {languages.length != 0 && ( //gives space for a language field only when necessary
         <>

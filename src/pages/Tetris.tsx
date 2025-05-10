@@ -49,11 +49,14 @@ function Tetris() {
               can_rotate={true}
               languages={["unity.png", "Csharp.png"]}
             >
-              This is a basic Tetris game with all the basic features. You get
+              {[
+                `This is a basic Tetris game with all the basic features. You get
               1000 points for each line cleared, and you get a gameover when you
-              reach the top. You can rotate and move blocks, in addition to
+              reach the top.`,
+                `You can rotate and move blocks, in addition to
               fastfalling. I also implemented ghost blocks at the lowest
-              possible point to show you where the block will land.
+              possible point to show you where the block will land.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="grey"
@@ -62,12 +65,15 @@ function Tetris() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              Tetris was my first game a programmed and though I've accomplished
-              much more since then, I learned a lot of valuable things. There
+              {[
+                `Tetris was my first game a programmed and though I've accomplished
+              much more since then, I learned a lot of valuable things.`,
+                `There
               was a lot of complicated logic such as how to rotate blocks, as
               each shape consists of 4 individual block elements that are
               repositioned, and how to predict where the block will fall with
-              the ghost shapes.
+              the ghost shapes.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="pink"

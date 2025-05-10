@@ -49,17 +49,20 @@ function PythonML() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              The first half of this course covered how to display data using
+              {[
+                `The first half of this course covered how to display data using
               graphs, which later tied in to the more complicated machine
-              learning section. I learned the basics of the popular Numpy and
-              Pandas libraries and was able to fetch, modify and export data.
-              More importantly I was able to take that modified data and put it
+              learning section.`,
+                `Learned the basics of the popular Numpy and
+              Pandas libraries and was able to fetch, modify and export data.`,
+                `More importantly I was able to take that modified data and put it
               on a graph. I learned how to make plots using Matplotlib, Seaborn
               (which is built on Matplotlib and outputs more complicated,
-              prettier graphs). I also learned plotly and cufflinks in offline,
-              which outputs interactive graphs and maps in html. What you see
-              here is a cloropleth map based on power consumption built using
-              plotly.
+              prettier graphs).`,
+                `I also learned plotly and cufflinks in offline, which outputs
+              interactive graphs and maps in html. What you see here is a
+              cloropleth map based on power consumption built using plotly.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="pink"
@@ -67,19 +70,24 @@ function PythonML() {
               bonus_classes="w-[80%] h-min"
               can_rotate={true}
             >
-              The undoubtedly more complicated section of the course was the
+              {[
+                `The undoubtedly more complicated section of the course was the
               machine learning course, in which I used the SciKitLearn library
-              to predict data when given training samples. We would give the
+              to predict data when given training samples.`,
+                `We would give the
               class some real data to train on, and then followed by random data
-              to test the classification ability, and compare the results. The
+              to test the classification ability, and compare the results.`,
+                `The
               types of classification I learned included, but were not limited
-              to linear regression, logistic regression, K-nearest neighbours,
-              support vector machines, and finally used Google's Tensorflow
-              library with Keras to use neural networks and put them on an
-              interactive dashboard. I would then test the accuracy of this data
-              with SciKitLearn's classification reports and try to optimize
-              them. I would also use the plotting software from before to find
-              correlated data.
+              to linear regression, logistic regression, K-nearest neighbours and
+              support vector machines`,
+                `I also used Google's Tensorflow library with Keras to use
+              neural networks and put them on an interactive dashboard.`,
+                `I would
+              then test the accuracy of this data with SciKitLearn's
+              classification reports and try to optimize them. I would also use
+              the plotting software from before to find correlated data.`,
+              ]}
             </ColorBox>
             <ColorBox
               color="indigo"
@@ -88,15 +96,20 @@ function PythonML() {
               languages={["python.png"]}
               can_rotate={true}
             >
-              This is just yet another step in me exploring the field in data
-              analysis, and I am loving it. I liike finding new and improved
+              {[
+                `This is just yet another step in me exploring the field in data
+              analysis, and I am loving it.`,
+                `I like finding new and improved
               ways to not only display information (such as the Seaborn library)
               or manipulate information (with Pandas), but also predict
-              information with machine learning. Before going into this, I knew
-              nothing about machine learning. But now I must say I am much more
+              information with machine learning.`,
+                `Before going into this, I knew
+              nothing about machine learning.`,
+                `But now I must say I am much more
               comfortable with it. Albeit, this is only an introductory course,
               but this is a path I do not see myself stopping with any time
-              soon.
+              soon.`,
+              ]}
             </ColorBox>
           </div>
         </div>
