@@ -12,14 +12,10 @@ const RoundImage = ({ src, size, bonus_classes }: Props) => {
 
   //determining base class size
   base_classes =
-    size == "medium"
-      ? base_classes + " size-72"
-      : size == "small"
-      ? base_classes + " size-36"
-      : base_classes;
+    size == "medium" ? base_classes + " size-72" : size == "small" ? base_classes + " size-36" : base_classes;
   return (
     <div className={base_classes}>
-      <img src={src} />
+      <img src={src} className="rounded-full" />
     </div>
   );
 };

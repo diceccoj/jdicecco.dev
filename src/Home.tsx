@@ -18,16 +18,7 @@ function Home() {
   }, []);
   return (
     <>
-      <Nav
-        items={[
-          "Work",
-          "Games",
-          "Websites",
-          "Events",
-          "Other Projects",
-          "Skills",
-        ]}
-      ></Nav>
+      <Nav items={["Work", "Games", "Websites", "Events", "Other Projects", "Skills"]}></Nav>
       <TopGraphic />
       <JobsPanel />
       <WebPanel />
@@ -40,48 +31,34 @@ function Home() {
           "C#",
           "C++",
           "C",
+          "Time Management",
+          "Worked In Teams",
+          "teamwork",
+          "collaboration",
+          "communication",
+          "organized",
+          "machine learning",
+          "scikitlearn",
           "Java",
           "HTML",
           "css",
-          "next",
-          "visual basic",
-          "git",
-          "git lfs",
           "Javascript",
           "Typescript",
+          "next.js",
+          "React",
+          "visual basic",
+          "git",
           "Django",
           "SQL",
-          "Cherwell Ticketing System",
           "Microsoft Office",
           "Linux",
-          "Ubuntu Server",
-          "RHEL Linux",
-          "Power Automate",
           "Power BI",
-          "PostgresSQL",
-          "fly.io hosting",
           "Excel",
-          "Haskell",
-          "React",
-          "Tailwind",
-          "OpenWeather API",
-          "Open AI API",
-          "Unsplash API",
-          "Google Firebase",
-          "Firestore",
           "REST API",
+          "Google Firebase",
           "Godot",
           "Unity",
-          "Finance",
           "Server management",
-          "JSON Files",
-          "Streamlit",
-          "Windows 10/11",
-          "Time Management",
-          "Worked In Teams",
-          "led groups",
-          "communication",
-          "hard working",
         ]}
       />
       <Footer />

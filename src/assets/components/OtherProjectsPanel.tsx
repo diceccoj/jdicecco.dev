@@ -16,15 +16,7 @@ interface Props {
   image: string; //from work folder
 }
 
-const OtherProject = ({
-  color,
-  title,
-  subtitle,
-  children,
-  languages,
-  image,
-  url,
-}: Props) => {
+const OtherProject = ({ color, title, subtitle, children, languages, image, url }: Props) => {
   return (
     <div className="mt-20">
       <RoundImage
@@ -38,7 +30,7 @@ const OtherProject = ({
         subtitle={subtitle}
         can_rotate={true}
         languages={languages}
-        bonus_classes="lg:h-[300px] mt-20 w-[250px] pt-5"
+        bonus_classes="lg:h-[330px] mt-20 w-[250px] pt-5"
         text_box_classes="h-[35%]"
       >
         {children}
@@ -60,7 +52,16 @@ const OtherProjectsPanel = () => {
       <Header id="Other Projects">Other Projects</Header>
 
       <div className="flex justify-center">
-        <div className="responsive-grid-4 bg-in  place-items-center">
+        <div className="responsive-grid-4  place-items-center">
+          <OtherProject
+            color="indigo"
+            title="Flight Data Machine Learning Project"
+            languages={["python.png"]}
+            image="flight_data_ml.png"
+            url="/#/flight_data_ml/"
+          >
+            Using PyTorch and ScikitLearn to create multiple machine learning models, predicting flight delays.
+          </OtherProject>
           <OtherProject
             color="pink"
             title="Autoclave Arm"
@@ -68,8 +69,8 @@ const OtherProjectsPanel = () => {
             image="autoclave.png"
             url="/#/autoclave_arm/"
           >
-            A python script run in a Raspberry Pi, controlling a simulated
-            autoclave arm, controlled using two muscle sensors.
+            A python script run in a Raspberry Pi, controlling a simulated autoclave arm, controlled using two muscle
+            sensors.
           </OtherProject>
           <OtherProject
             color="teal"
@@ -78,8 +79,7 @@ const OtherProjectsPanel = () => {
             image="sudoku.png"
             url="/#/sudoku_solver/"
           >
-            A small project in Python which when given a sudoku board, will
-            solve it for you!
+            A small project in Python which when given a sudoku board, will solve it for you!
           </OtherProject>
           <OtherProject
             color="grey"
@@ -88,18 +88,7 @@ const OtherProjectsPanel = () => {
             image="bill.png"
             url="/#/billing_system/"
           >
-            A billing system for "Jonathan's Cafe" written in C. Takes an amount
-            of items and charges accordingly.
-          </OtherProject>
-          <OtherProject
-            color="indigo"
-            title="CPU Info Checker"
-            languages={["bash.png", "C.png"]}
-            image="cpu.png"
-            url="/#/cpu_fetcher/"
-          >
-            A bash script that takes user input of what they want of the cpu,
-            and returns the corresponding information.
+            A billing system for "Jonathan's Cafe" written in C. Takes an amount of items and charges accordingly.
           </OtherProject>
         </div>
       </div>
